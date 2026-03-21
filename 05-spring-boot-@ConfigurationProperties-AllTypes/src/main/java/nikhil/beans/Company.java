@@ -2,6 +2,14 @@ package nikhil.beans;
 
 public class Company {
 	
+	static {
+		System.out.println("Company.enclosing_method()");
+	}
+	public Company() {
+		System.out.println("Company.Company()");
+	}
+	
+	
 	private String title;
 	private String location;
 	private Integer size;

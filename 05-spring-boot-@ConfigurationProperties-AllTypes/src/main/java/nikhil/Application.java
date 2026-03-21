@@ -1,5 +1,7 @@
 package nikhil;
 
+import javax.sql.DataSource;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -29,6 +31,9 @@ public class Application {
 		
 		Employee bean = context.getBean(Employee.class);
 		System.out.println(bean);
+		
+		DataSource source = context.getBean(DataSource.class);
+		System.out.println("DataSource is :: "+source.getClass().getName());
 		
 		((ConfigurableApplicationContext) context).close();
 		System.out.println("***********Container Stopped****************");
