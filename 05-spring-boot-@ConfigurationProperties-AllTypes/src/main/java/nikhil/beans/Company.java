@@ -1,13 +1,11 @@
 package nikhil.beans;
 
-import org.springframework.stereotype.Component;
-
-@Component("company")
 public class Company {
 	
 	private String title;
 	private String location;
 	private Integer size;
+	
 	public String getTitle() {
 		return title;
 	}
