@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>Nikhil</groupId>
-	<artifactId>06-spring-boot-DI-Plan-Jdbc</artifactId>
+	<artifactId>07-spring-boot-YML-App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
