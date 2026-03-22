@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>Nikhil</groupId>
-	<artifactId>01-spring-boot-DI</artifactId>
+	<artifactId>04-spring-boot-configurationproperty</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
