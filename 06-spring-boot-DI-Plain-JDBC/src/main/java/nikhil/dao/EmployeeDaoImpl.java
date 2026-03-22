@@ -34,6 +34,9 @@ public class EmployeeDaoImpl implements IEmployeeDao {
 				ResultSet resultSet =stmt.executeQuery(GET_EMP_DESG+cond+ "ORDER BY job")
 						){
 			
+			System.out.println("datasource type is::"+dataSource.getClass().getName());
+			
+			
 			listBo =new ArrayList<>();
 			//process resultset
 			while (resultSet.next()) {
