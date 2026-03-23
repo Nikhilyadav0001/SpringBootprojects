@@ -35,3 +35,11 @@ spring:
       - prod
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - prodst
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource

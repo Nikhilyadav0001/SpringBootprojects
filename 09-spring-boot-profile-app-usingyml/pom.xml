@@ -61,11 +61,12 @@
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-dbcp2</artifactId>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ucp -->
+			
+		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
 		<dependency>
-		    <groupId>com.oracle.database.jdbc</groupId>
-		    <artifactId>ucp</artifactId>
+		    <groupId>com.mchange</groupId>
+		    <artifactId>c3p0</artifactId>
+		    <version>0.9.5.4</version>
 		</dependency>
 
 	</dependencies>

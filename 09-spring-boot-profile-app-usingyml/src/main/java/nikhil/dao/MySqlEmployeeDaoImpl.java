@@ -10,13 +10,21 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import nikhil.beans.EmployeeBO;
 
 @Repository("dao")
-public class EmployeeDaoImpl implements IEmployeeDao {
+@Profile(value = {"dev","qa"})
+public class MySqlEmployeeDaoImpl implements IEmployeeDao {
 
+	
+	static {
+		System.out.println("MySqlEmployeeDaoImpl.enclosing_method()");
+	}
+	
+	
 	private static final String GET_EMP_DESG = "SELECT * FROM employee Where job IN";
 	@Autowired
 	private DataSource dataSource;
