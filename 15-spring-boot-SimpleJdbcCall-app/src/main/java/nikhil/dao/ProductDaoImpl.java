@@ -31,7 +31,7 @@ public class ProductDaoImpl implements IProductDao {
 		parameterSource.addValue("name1", prod1);
 		parameterSource.addValue("name2", prod2);
 
-		//keeping the result
+		//keeping the result call rs muktiple time 
 		jdbcCall.returningResultSet("result", new RowMapper<ProductBO>() {
 
 			@Override
